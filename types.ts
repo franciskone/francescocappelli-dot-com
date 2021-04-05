@@ -1,3 +1,20 @@
+export enum Colors {
+  primary = 'primary',
+  secondary = 'secondary',
+  success = 'success',
+  danger = 'danger',
+  warning = 'warning',
+  info = 'info',
+  black = 'black',
+  white = 'white',
+  transparent = 'transparent',
+}
+
+export enum Icons {
+  chevronRight = 'chevron-right',
+  chevronLeft = 'chevron-left',
+}
+
 export interface Tag {
   id: string;
   name: string;
@@ -26,10 +43,10 @@ export interface Client {
 
 export interface Project {
   id: string;
+  name: string;
   description: {
     html: string;
   };
-  name: string;
   slug: string;
   url: string;
   startDate: string;
