@@ -1,8 +1,7 @@
 import React from 'react';
-import { Story } from '@storybook/react';
-import { Button, ButtonProps } from './Button';
+import { Button } from './Button';
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args} />;
 
 // Here we export a variant of the default template passing props
 export const ButtonPrimary = Template.bind({});
