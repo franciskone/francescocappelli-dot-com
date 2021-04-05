@@ -1,13 +1,16 @@
 import React from 'react';
-import { Button } from './Button';
+import { Button, ButtonProps } from './Button';
+import { Story } from '@storybook/react';
+import { Colors } from '../types';
 
-const Template = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 // Here we export a variant of the default template passing props
 export const ButtonPrimary = Template.bind({});
 ButtonPrimary.args = {
   text: 'Click Me',
   onClick: () => alert('You clicked the button!'),
+  color: Colors.primary,
 };
 
 // Here we export a variant of the default template passing props
