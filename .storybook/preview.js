@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/globals.css';
+import { Windmill } from '@windmill/react-ui';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

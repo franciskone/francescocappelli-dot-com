@@ -10,6 +10,11 @@ export enum Colors {
   transparent = 'transparent',
 }
 
+export enum Icons {
+  chevronRight = 'chevron-right',
+  chevronLeft = 'chevron-left',
+}
+
 export interface Tag {
   id: string;
   name: string;
@@ -38,10 +43,10 @@ export interface Client {
 
 export interface Project {
   id: string;
+  name: string;
   description: {
     html: string;
   };
-  name: string;
   slug: string;
   url: string;
   startDate: string;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, ButtonProps } from './Button';
 import { Story } from '@storybook/react';
+
 import { Colors } from '../types';
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;

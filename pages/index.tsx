@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Button } from '@windmill/react-ui';
 
 const Home = () => {
   return (
@@ -18,6 +19,11 @@ const Home = () => {
           <p className="text-gray-500">You have a new message!</p>
         </div>
       </div>
+
+      <Button size="larger">Larger</Button>
+      <Button size="large">Large</Button>
+      <Button>Regular</Button>
+      <Button size="small">Small</Button>
     </div>
   );
 };

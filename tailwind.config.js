@@ -1,3 +1,5 @@
+const windmill = require('@windmill/react-ui/config');
+
 module.exports = {
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
