@@ -7,7 +7,7 @@ const Template: Story<IconProps> = (args) => <Icon {...args} />;
 
 export const Interactive = Template.bind({});
 Interactive.args = {
-  iconName: Icons.chevronRight,
+  iconName: Icons.chevronLeft,
 };
 
 export default {

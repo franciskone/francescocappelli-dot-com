@@ -22,9 +22,5 @@ const svgSelector = (name: Icons) => {
 
 export const Icon = ({ iconName }: IconProps) => {
   const CustomIcon = svgSelector(iconName);
-  return (
-    <span>
-      <CustomIcon />
-    </span>
-  );
+  return <CustomIcon />;
 };
