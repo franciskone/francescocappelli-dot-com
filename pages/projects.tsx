@@ -1,28 +1,10 @@
 import { gql } from '@apollo/client';
 import client from '../util/apollo-client';
-import styles from '../styles/Home.module.css';
-import Head from 'next/head';
 import { Project } from '../types';
+import { ProjectsScreen } from '../screens/ProjectsScreen';
 
 const Projects = ({ projects }: { projects: Project[] }) => {
-  debugger;
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Projects</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        {projects.map(({ id, name, description: { html } }) => (
-          <section key={id}>
-            <h2>{name}</h2>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-          </section>
-        ))}
-      </main>
-    </div>
-  );
+  return <ProjectsScreen projects={projects} />;
 };
 
 export default Projects;
